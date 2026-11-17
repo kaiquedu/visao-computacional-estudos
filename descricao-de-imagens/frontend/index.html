@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Imagem</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>Análise de Imagem <span class="material-icons" style="vertical-align: middle;">image</span></h1>
+        <input type="file" id="inputFile" accept="image/png, image/jpeg, image/webp">
+        <img id="imagePreview" alt="Pré-visualização da imagem" style="max-width: 200px; display: none;">
+        <button id="buttonAnalyze" disabled>
+            <span class="material-icons" style="vertical-align: middle;">search</span> Obter Análise
+        </button>
+        <div id="promptContainer" aria-live="polite"></div>
+    </div>
+    <div class="overlay" id="loadingOverlay">
+        <div class="loader">
+            <span class="material-icons" style="font-size: 2rem;">hourglass_empty</span>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
